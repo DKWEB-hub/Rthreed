@@ -1,0 +1,102 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light background */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contact Us Section */
+.contact-us-section {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 800px; /* Set a maximum width for the form */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border: 1px solid #ddd;
+}
+
+/* Contact Information Box */
+.contact-info-box, .message-form-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Section Headers */
+.contact-info-box h3, .message-form-box h3 {
+  color: #007bff; /* Bootstrap primary blue */
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Contact Info Paragraphs */
+.contact-info-box p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Form Label */
+.message-form-box .form-label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Form Inputs */
+.message-form-box .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 15px;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Input Hover/Focus Effects */
+.message-form-box .form-control:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+}
+
+/* Submit Button Styling */
+.message-form-box button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.message-form-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .contact-us-section {
+    padding: 15px;
+    margin: 20px auto;
+  }
+  
+  .contact-info-box h3, .message-form-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .message-form-box button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}

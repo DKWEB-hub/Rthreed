@@ -1,0 +1,309 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+}
+
+/* Container and Layout */
+.container {
+    max-width: 1800px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+/* Header and Navbar */
+.navbar {
+    background-color: black; /* Black background for the navbar */
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-toggler-icon {
+    background-color: #000;
+}
+
+.navbar .nav-link {
+    font-family: 'Arial', sans-serif; /* You can change the font if needed */
+    font-size: 0.5rem; /* Larger font size for links */
+    color: white; /* White text color for the links */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Make the text uppercase */
+    padding: 0.5rem 1rem; /* Add some padding around the links */
+    letter-spacing: 1px; /* Add letter spacing for better readability */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+/* Hover effect for the navbar links */
+.navbar .nav-link:hover {
+    color: #007bff; /* Change color to blue on hover */
+    text-decoration: underline; /* Underline the text on hover */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 1.5rem; /* Reduce font size on smaller screens */
+        text-align: center; /* Center align the text */
+        padding: 10px; /* Adjust padding for better spacing */
+    }
+}
+
+/* Content Section Styling */
+.bg-light {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Division Styling */
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Division-Specific Background Colors */
+#division2 {
+    background-color: #e6f7ff; /* Light blue */
+}
+
+#division3 {
+    background-color: #ffcccb; /* Light coral */
+}
+
+#division4 {
+    background-color: #ccffcc; /* Light green */
+}
+
+#division5 {
+    background-color: #f9f9f9; /* Light gray */
+}
+
+#division6 {
+    background-color: #ffe680; /* Light yellow */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-inner img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Targeting only the services section */
+#services-section h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+#services-section h3 {
+    color: #02052e; /* Adjusted for contrast with background image */
+    font-size: 1.5rem;
+}
+
+#services-section p {
+    color: #02052e; /* Adjusted for contrast with background image */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Ensure equal height for all service boxes with fixed height */
+#services-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#services-section .service-box {
+    flex: 1;
+    height: 200px; /* Fixed height */
+    background-size: cover; /* Ensures the background image covers the entire box */
+    background-position: center; /* Centers the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    padding: 20px;
+    color: white; /* Ensure text is readable on the background image */
+}
+
+#services-section .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Background images for each service box */
+#services-section .service-box:nth-child(1) {
+    background-image: url('images/service_backgrounds.png');
+}
+
+#services-section .service-box:nth-child(2) {
+    background-image: url('images/service_backgroundspng');
+}
+
+#services-section .service-box:nth-child(3) {
+    background-image: url('images/service_backgrounds.png');
+}
+
+/* Ensure the content inside the service-box fits within the fixed height */
+#services-section .service-box p {
+    margin-bottom: 0;
+}
+
+/* Add responsiveness for mobile screens */
+@media (max-width: 768px) {
+    #services-section .row {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-bg-light {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-left-content {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.custom-right-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-right-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Unique CSS for the h2 tag and its text */
+.custom-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333; /* Dark gray color for the text */
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: justify; /* Justified text alignment */
+    margin-bottom: 0; /* Remove extra space under the text */
+    padding: 10px; /* Add some padding around the text */
+    font-family: cursive;
+}
+
+

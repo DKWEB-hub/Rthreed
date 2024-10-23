@@ -1,0 +1,211 @@
+/* Header and Navbar */
+.navbar {
+    background-color: black; /* Black background for the navbar */
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-toggler-icon {
+    background-color: #000;
+}
+
+.navbar .nav-link {
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 0.5rem; /* Font size for links */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    padding: 0.5rem 1rem; /* Padding for links */
+    letter-spacing: 1px; /* Letter spacing for readability */
+    transition: color 0.3s ease; /* Hover transition */
+}
+
+/* Hover effect for navbar links */
+.navbar .nav-link:hover {
+    color: #007bff; /* Blue on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 1.5rem; /* Larger font for smaller screens */
+        text-align: center; /* Center text on small screens */
+        padding: 10px; /* Adjusted padding */
+    }
+}
+
+/* Product Card Styling */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.2s; /* Card hover effect */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Scale on hover */
+}
+
+.card img {
+    cursor: pointer; /* Pointer cursor for image */
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+    height: 300px;
+    object-fit: cover; /* Consistent image fit */
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 200px; /* Smaller images on mobile */
+    }
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333; /* Card title color */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666; /* Card text color */
+}
+
+/* Modal Styling */
+.modal-content {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 15px;
+}
+
+.modal .carousel-inner img {
+    height: 500px;
+    object-fit: contain; /* Consistent modal image fit */
+}
+
+@media (max-width: 768px) {
+    .modal .carousel-inner img {
+        height: 300px; /* Smaller modal images on mobile */
+    }
+}
+
+/* Close Button Styling */
+.btn-secondary {
+    background-color: #005769;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #00455a;
+}
+
+/* Spacing between rows */
+.row {
+    margin-top: 20px;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Align items evenly */
+}
+
+.gallery-img {
+    width: 30%;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.2s; /* Scale on hover */
+}
+
+.gallery-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* Ensure modal overlay is above other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    overflow: hidden; /* Ensure content is contained */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    position: relative; /* Ensure it is positioned within the modal */
+    z-index: 1001; /* Above the modal overlay */
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 1002; /* Ensure close button is above modal content */
+}
+
+/* Navigation arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    color: white;
+    padding: 16px;
+    font-size: 30px;
+    transition: 0.3s;
+    z-index: 1002; /* Ensure arrows are above modal content */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken on hover */
+}
